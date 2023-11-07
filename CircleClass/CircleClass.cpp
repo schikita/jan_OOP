@@ -7,12 +7,24 @@
 
 using namespace std;
 
-class User {
-    
+class Circle {
+    int radius;
+
+public:
+    int hetRadius() {
+        return radius;
+    }
+
+    void setRadius(int r) { 
+        radius = r;
+    }
 };
 
 int main()
 {
-   
+    Circle C1;
+    C1.setRadius(10);
+
+    cout << C1.hetRadius() << endl;
     return 0;
 }
