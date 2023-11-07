@@ -24,7 +24,7 @@ int main()
 {
     Circle C1;
     C1.setRadius(10);
-
+    cout << "Home work is complete!" << endl;
     cout << C1.hetRadius() << endl;
     return 0;
 }
