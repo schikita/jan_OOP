@@ -2,32 +2,22 @@
 
 using namespace std;
 
+void summ(int a, int b) {
+    cout << a + b << endl;
+}
+
+int sum(int a, int b) {
+    return a + b;
+}
+
 int main() {
     setlocale(LC_ALL, "rus");
-   
-    int p; cin >> p;
+    int a = 10, b = 67;
+    summ(a, b);
 
-	switch (p)
-	{
-	case 1: 
-		cout << "^ ^\n";
-		break;
-	case 2:
-		cout << "^\n";
-		break;
-	case 3:
-		cout << "Norm\n";
-		break;
-	case 4:
-		cout << "v\n";
-		break;
-	case 5:
-		cout << "v v\n";
-		break;
-	default: "Вы проверяете не давление\n";
-		break;
-	}
+    cout << sum(a, b) << endl;
 
+    summ(100, 67);
 
     return 0;
 }

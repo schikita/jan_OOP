@@ -1,30 +1,21 @@
-﻿
-#define _CRT_SECURE_NO_WARNINGS
-
-
-#include <iostream>
-#include <cstring> // Для работы с строками
+﻿#include <iostream>
+#include <ctime>
+#include <Windows.h>
 
 using namespace std;
 
-class Circle {
-    int radius;
-
-public:
-    int hetRadius() {
-        return radius;
-    }
-
-    void setRadius(int r) { 
-        radius = r;
-    }
-};
+int fact(int n) {
+	if (n <= 1)
+	{
+		return 1;
+	}
+	return n * fact(n - 1); // &(5) * &(4) * &(3)...
+}
 
 int main()
 {
-    Circle C1;
-    C1.setRadius(10);
-    cout << "Home work is complete!" << endl;
-    cout << C1.hetRadius() << endl;
+	cout << fact(5) << endl;
+
+
     return 0;
 }
